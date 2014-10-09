@@ -9,3 +9,4 @@ cv.pdf: cv.dvi
 cv.dvi: cv.tex
 	latex cv.tex
 	latex cv.tex
+
