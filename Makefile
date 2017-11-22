@@ -1,4 +1,4 @@
-all: ddevec_cv.pdf
+all: ddevec_cv.pdf cv2.pdf
 
 ddevec_cv.pdf: cv.pdf
 	cp cv.pdf ddevec_cv.pdf
@@ -10,3 +10,6 @@ cv.dvi: cv.tex
 	latex cv.tex
 	latex cv.tex
 
+#cv2.pdf: cv2.tex
+#	xelatex cv2.tex
+#	xelatex cv2.tex
