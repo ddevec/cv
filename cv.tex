@@ -48,7 +48,7 @@
 \moveleft.5\hoffset\centerline{4929 BBB, 2260 Hayward St} % Your address
 \moveleft.5\hoffset\centerline{Ann Arbor, MI 48109}
 \moveleft.5\hoffset\centerline{ddevec@umich.edu}
-\moveleft.5\hoffset\centerline{http://www.umich.edu/\textasciitilde{}devec}
+\moveleft.5\hoffset\centerline{http://www.umich.edu/\textasciitilde{}ddevec}
 
 %----------------------------------------------------------------------------------------
 
@@ -57,8 +57,8 @@
 
 \section{Education}
 
-{\sl PhD. Candidate,} \\
-University of Michigan, Ann Arbor, MI, Expected graduation April 2017 \\
+{\sl PhD.} \\
+University of Michigan, Ann Arbor, MI, To be Conferred April, 2018 \\
 Concentration: Computer Science Engineering \\
 Advisor: Peter M. Chen
 
@@ -72,31 +72,43 @@ Concentration: Computer Engineering
 
 
 \section{Research \\Area}
-Today computers by default discard their rich history of prior computation and
-memory states.  My vision is to create computer systems with the default of
-remembering all past computation and furthermore making it practical to query
-the massive, rich database of computation recorded.  My research focuses on
-creating system-level abstractions and developing novel analysis methodologies
-to accomplish this goal.  
+Software system errors and misbehaviors present a major problem in
+writing, maintaining, and using significant software bases.  Security
+vulnerabilities can lead to catastrophic data and privacy losses and
+great fiscal cost.  Software downtime due to bugs is highly costly for
+companies, even when software doesn't crash the cost of developer
+effort to eliminate bugs is far too high.  My research seeks to
+greatly reduce the burden of software errors.  In an ideal world, once
+an individual learns of some mis-behavior, such as a security
+vulnerability, information leak, mis-configuration, erroneous data, or
+unexpected crash; he or she should have tools which quickly identify
+and understand the origin of the error, what state it has affected,
+and the system should either identify a solution to the problem, or
+self correct.
 
 \section{Research Projects}
-%\begin{itemize}
-%\item 
-\textbf{Optimistic Hybrid Analysis} -- A novel analysis methodology
-which combines speculation, static analysis, and dynamic analysis to
-ultimately produce a dynamic analysis which is far more efficient than
-a traditional dynamic analysis, but just as accurate (under
-submission).
+\textbf{Optimistic Hybrid Analysis} -- A novel method of dramatically
+accelerating dynamic analysis, which combines speculation, a novel
+static analysis called predicated static analysis, and speculative
+dynamic analysis to ultimately produce a dynamic analysis which is far
+more efficient than a traditional dynamic analysis, but just as
+accurate.
+
+\textbf{Eidetic Systems} -- A computer operating system which uses
+novel deterministic record/replay technology to by default remember
+and enable powerful lineage queries for all computation (process
+memory states, and inter-process communication).
 
 %\item
-\textbf{Eidetic Systems} -- A computer operating system which by
-default remembers and can query all computation (process memory states, and
-inter-process communication) done on it.
+\textbf{Parallel Analysis} -- I've used record/replay technology and
+epoch parallelism to efficiently parallelize traditionally
+heavy-weight difficult to parallelize analyses.  Methods show
+super-linear scaling for race-detection, and can scale taint tracking
+to 100's of CPU cores.
 
-%\item
-\textbf{Parallel Analysis} -- I've worked on parallelizing
-\textbf{Data Race Detection} and \textbf{Dynamic Information Flow
-Tracking}.
+%  I've worked on parallelizing
+%  \emph{Data Race Detection} and \emph{Dynamic Information Flow
+%  Tracking}.
 %\end{itemize}
 
 %Broadly, my research focus is on Operating Systems.  More specifically
@@ -107,62 +119,72 @@ Tracking}.
 %understand how past computations have effected current states.
 
 \section{Non-Research \\ Projects}
-\textbf{TalkingBook} --
-A computer system catered to the challenges of the developing world,
-specifically targeting extremely low-cost and power consumption.  We
-created a custom microprocessor with novel memory architecture and
-operating system designed to be accessible to the world's
-poorest people.  A joint work between the University of Michigan and
-Literacy Bridge (http://literacybridge.org).
+\textbf{TalkingBook} -- A computer system catered to the challenges of
+the developing world, specifically targeting extremely low-cost and
+power consumption.  We have developed a custom microprocessor with
+novel memory architecture and operating system designed to be
+accessible to the world's poorest people.  A joint work between the
+University of Michigan and Literacy Bridge
+(http://literacybridge.org).
 
 \section{Publications}
 \textbf{Peer-Reviewed Publications}\\
+David Devecsery, Peter Chen, Satish Narayanasamy, Jason Flinn, ``Fast,
+Sound Dynamic Analysis through Predicated Static Analysis and
+Speculative Execution'', {\sl To appear in ACM International Conference
+on Architectural Support for Programming Languages and Operating
+Systems} (ASPLOS), March
+2018.
+
 Andrew Quinn, David Devecsery, Peter M. Chen, and Jason Flinn,
-``JetStream: Cluster-Scale Parallelization of Information Flow Queries"
-{\sl to appear in Proceedings of the 12th USENIX Symposium on Operating
+``JetStream: Cluster-Scale Parallelization of Information Flow
+Queries'', {\sl Proceedings of the 12th USENIX Symposium on Operating
 Systems Design and Implementation} (OSDI), November 2016.
 
-David Devecsery, Michael Chow, Xianzheng Dou, Peter M Chen, Jason Flinn,
-``Eidetic Systems" {\sl Proceedings of the 2014 conference on Operating
-System Design and Implementation} (OSDI), October 2014.
+David Devecsery, Michael Chow, Xianzheng Dou, Peter M Chen, Jason
+Flinn, ``Eidetic Systems'' {\sl Proceedings of the 2014 conference on
+Operating System Design and Implementation} (OSDI), October 2014.
 
 Benjamin Wester, David Devecsery, Peter M. Chen, Jason Flinn, Satish
-Narayanasamy, ``Parallelizing Data Race Detection", {\sl Proceedings of the
-2013 International Conference on Architectural Support for Programming
-Languages and Operating Systems} (ASPLOS), March 2013.
+Narayanasamy, ``Parallelizing Data Race Detection'', {\sl Proceedings
+of the 2013 International Conference on Architectural Support for
+Programming Languages and Operating Systems} (ASPLOS), March 2013.
 
 Foo, Z.; Devecsery, D.; Ghaed, M.; Lee, I.; Madhavan, A.; Park, Y.;
 Rao, A.; Renner, Z.; Roberts, N.; Schulman, A.; Vinay, V.; Wieckowski,
 M.; Yoon, D.; Schmidt, C.; Schmid, T.; Dutta, P.; Chen, P.; Blaauw,
 D.; , ``A low-cost audio computer for information dissemination among
-illiterate people groups," {\sl Custom Integrated Circuits Conference}
+illiterate people groups,'' {\sl Custom Integrated Circuits Conference}
 (CICC), 2012 IEEE , vol., no., pp.1-4, 9-12 Sept. 2012
 
-Huey-Ming Tzeng, Atul Prakash, Mark Brehob, Allison Anderson, David
-Andrew Devecsery and Chang-Yi Yin, ``How Feasible Was a Bed-Height
-Alert System?”, {\sl Clinical Nursing Research} (SCI, SSCI) 2012
-
-Huey-Ming Tzeng, Atul Prakash, Mark Brehob, Allison Anderson, David
-Andrew Devecsery and Chang-Yi Yin, ``Keeping patient beds in a low
-position: an exploratory descriptive study to continuously monitor the
-height of patient beds in an adult acute surgical inpatient care
-setting," {\sl Contemporary Nursing} June 2012.
+%Huey-Ming Tzeng, Atul Prakash, Mark Brehob, Allison Anderson, David
+%Andrew Devecsery and Chang-Yi Yin, ``How Feasible Was a Bed-Height
+%Alert System?”, {\sl Clinical Nursing Research} (SCI, SSCI) 2012
+%
+%Huey-Ming Tzeng, Atul Prakash, Mark Brehob, Allison Anderson, David
+%Andrew Devecsery and Chang-Yi Yin, ``Keeping patient beds in a low
+%position: an exploratory descriptive study to continuously monitor the
+%height of patient beds in an adult acute surgical inpatient care
+%setting," {\sl Contemporary Nursing} June 2012.
 
 Zhiyoong Foo, David Devecsery, Thomas Schmid, N. Clark, Rebecca Frank,
 M. Ghaed, Y. Kuo, In Hee Lee, Youn Sung Park, Zachary Renner,
 Nathaniel Slottow, Vikas Vinay, Michael Wieckowski, Dongmin Yoon,
 David Blaauw, Peter M. Chen, Prabal Dutta, Cliff Schmidt, ``A Case for
 Custom Silicon in Enabling Low-Cost Information Technology for
-Developing Regions" , {\sl Proceedings of the 2010 Symposium on Computing
-for Development} (SIGDEV) , December 2010.
+Developing Regions'' , {\sl Proceedings of the 2010 Symposium on
+Computing for Development} (SIGDEV) , December 2010.
 
 \textbf{Presentations}\\
-``Eidetic Systems" David Devecsery, Michael Chow, Xianzheng Dou,
+``Optimistic Hybrid Analysis'' David Devecsery, Peter Chen, Satish
+Narayanasamy, Jason Flinn, {\sl Midwest PL Summit}, December 2016.
+
+``Eidetic Systems'' David Devecsery, Michael Chow, Xianzheng Dou,
 Peter M Chen, Jason Flinn, {\sl Proceedings of the 2014 conference
 on Operating System Design and Implementation} (OSDI), October 2014.
 
 ``A Case for Custom Silicon in Enabling Low-Cost Information
-Technology for Developing Regions" Zhiyoong Foo, David Devecsery,
+Technology for Developing Regions'' Zhiyoong Foo, David Devecsery,
 Thomas Schmid, N. Clark, Rebecca Frank, M. Ghaed, Y. Kuo, In Hee Lee,
 Youn Sung Park, Zachary Renner, Nathaniel Slottow, Vikas Vinay,
 Michael Wieckowski, Dongmin Yoon, David Blaauw, Peter M. Chen, Prabal
@@ -171,15 +193,20 @@ Computing for Development} (SIGDEV) , December 2010. (Presentation by
 David Devecsery)
 
 \textbf{Posters}\\
-``Optimistic Static Analysis" David Devecsery, Peter M Chen, Jason
-Flinn, Satish Narayanasamy, {\sl The 24th ACM Symposium on Operating Systems
-Principals} (SOSP), October 2015.
+Andrew Quinn, David Devecsery, Peter M. Chen, and Jason Flinn,
+``JetStream: Cluster-Scale Parallelization of Information Flow
+Queries'' {\sl Proceedings of the 12th USENIX Symposium on Operating
+Systems Design and Implementation} (OSDI), November 2016.
 
-``Eidetic Systems" David Devecsery, Michael Chow, Xianzheng Dou,
+``Optimistic Static Analysis'' David Devecsery, Peter M Chen, Jason
+Flinn, Satish Narayanasamy, {\sl The 24th ACM Symposium on Operating
+Systems Principals} (SOSP), October 2015.
+
+``Eidetic Systems'' David Devecsery, Michael Chow, Xianzheng Dou,
 Peter M Chen, Jason Flinn, {\sl The 2014 conference
 on Operating System Design and Implementation} (OSDI), October 2014.
 
-``Flexible Replay Groups" David Devecsery, Peter M Chen, Jason Flinn,
+``Flexible Replay Groups'' David Devecsery, Peter M Chen, Jason Flinn,
 {\sl The 24th ACM Symposium on Operating Systems
 Principals} (SOSP), November 2013.
 
@@ -213,7 +240,6 @@ Software Reading Group Organizer \hfill Winter 2012-Winter 2013 \\
 Software Reading Group Volunteer Speaker \hfill Fall 2011-Present \\
 Tutor in Computer Architecture and Operating Systems\hfill Fall 2011 \\
 Mentor for TalkingBook Project \hfill Fall '12 - Present \\
-%Eagle Scout \\
 
 \end{resume}
 \end{document}
